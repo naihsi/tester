@@ -1,0 +1,11 @@
+---
+# 0. init and debug
+- name: demo
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: put a file
+    ansible.builtin.copy:
+      dest: ~/demo.file
+      content: |
+        test
